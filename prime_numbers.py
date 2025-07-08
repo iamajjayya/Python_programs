@@ -1,20 +1,19 @@
-
 def is_prime(num):
     if num <= 1:
         return False
-    for i in range(2,num):
+    for i in range(2, num):
         if num % i == 0:
             return False
     return True
 
-print(is_prime(10))
+print(is_prime(10))  
 
-
-def primes(num):
-    num=10
-    for i in range(2,num + 1):
+def primes():
+    start  =  int(input("Enter a starting a value"))
+    end = int(input("Enter a Ending value"))
+    for i in range(start, end + 1):
         if is_prime(i):
-            print(i, end=' ')
+            print(i,  end=" ")
 
-primes(20)               
 
+primes()
